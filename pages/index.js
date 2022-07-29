@@ -8,13 +8,22 @@ import { MdOutlineHistoryEdu } from 'react-icons/md';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import JobCard from '../components/JobCard';
+import React, { useState } from 'react';
 
 export default function Home({ data }) {
+  const [isExpanded, setExpand] = useState(false);
+  const [isTrunicated, setTrunicated] = useState(false);
+
+  const setTrunicatedWrapper = (el) => {
+    const trunc = !!(el && el.clientHeight < el.scrollHeight);
+    setTrunicated(trunc);
+  };
+  const classWrapper = 'text-white text-lg m-2 line-clamp-4 md:line-clamp-none';
   console.log(data.work);
   return (
     <div className="bg-slate-700">
       <Navbar />
-      <div className="text-white  container flex flex-wrap justify-between items-center mx-auto  px-2 py-10 lg:pt-20">
+      <div className="text-white container flex flex-wrap justify-between items-center mx-auto  px-2 py-10 lg:pt-20">
         <section className="">
           <div className="flex">
             <h2 className="text-3xl mt-2 text-yellow-400">
@@ -26,10 +35,10 @@ export default function Home({ data }) {
             <h4>{`I'm a software`}</h4>
             <TbLetterT size={25} className="text-green-400" />
             <h4>{'Shaped developer at Ostmodern, and'}</h4>
-            <h4 className="text-xl 	">{'living in London, UK.'}</h4>
+            <h4 className="text-xl">{'living in London, UK.'}</h4>
           </div>
         </section>
-        <div className="sm:flex-wrap md:flex ">
+        <div className="sm:flex-wrap md:flex">
           <a
             href="https://github.com/jahed04368"
             target="_blank"
@@ -46,18 +55,35 @@ export default function Home({ data }) {
           </a>
         </div>
       </div>
-      <div className=" container flex flex-wrap justify-between items-center mx-auto  px-2 py-10 ">
+      <div className="container flex flex-wrap justify-between items-center mx-auto  px-2 py-10">
         <div className="flex">
           <h1 className="text-yellow-400 text-2xl">{'About me'}</h1>
           <div className="pl-1">
             <FcAbout size={30} />
           </div>
         </div>
-        <p className="text-white text-lg m-2">{data.about}</p>
-
+        <div>
+          <p
+            className={`${
+              isExpanded
+                ? `text-white text-lg m-2  md:line-clamp-none line-clamp-none`
+                : `text-white text-lg m-2  md:line-clamp-none line-clamp-3`
+            }`}
+            ref={setTrunicatedWrapper}
+          >
+            {data.about}
+          </p>
+          {(isTrunicated || isExpanded) && (
+            <button
+              className="font-normal text-sm underline text-green-300 md:hidden pl-2"
+              onClick={() => setExpand(!isExpanded)}
+            >
+              {isExpanded ? 'Show less' : 'Show more'}
+            </button>
+          )}
+        </div>
         <div className="py-2 flex">
           <h1 className="text-yellow-400 text-2xl ">{'Experience'}</h1>
-
           <div className="pl-1 pr-1 text-green-400 mt-0.5">
             <MdOutlineHistoryEdu size={30} />
           </div>
@@ -76,7 +102,6 @@ export default function Home({ data }) {
           );
         })}
       </div>
-
       <Footer />
     </div>
   );
