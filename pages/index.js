@@ -58,7 +58,7 @@ export default function Home({ data }) {
         <div className="py-2 flex">
           <h1 className="text-yellow-400 text-2xl ">{'Experience'}</h1>
 
-          <div className="pl-1 text-green-400 mt-0.5">
+          <div className="pl-1 pr-1 text-green-400 mt-0.5">
             <MdOutlineHistoryEdu size={30} />
           </div>
         </div>
