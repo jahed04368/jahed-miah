@@ -19,7 +19,7 @@ const JobCard = ({
   };
 
   return (
-    <div className="w-full m-2 ">
+    <div className="w-full p-2">
       <div className={show ? 'line-clamp-4' : ''}>
         <div className="p-4 w-full rounded-lg border shadow-md sm:p-2 dark:bg-gray-800 dark:border-gray-700">
           <h5 className="text-2xl font-bold text-white">{company}</h5>
@@ -30,7 +30,7 @@ const JobCard = ({
             {dateOfEmployment}
           </p>
 
-          <div className="">
+          <div>
             <p className="mt-2 text-base text-gray-200 sm:text-lg dark:text-gray-400">
               {'Responsibilities:'}
             </p>
@@ -61,7 +61,7 @@ const JobCard = ({
             )}
           </div>
           {/* className={`${isExpanded ? 'line-clamp-none' : 'line-clamp-2'}`} */}
-          <div className="">
+          <div>
             <p className="mt-2 text-base text-gray-200 sm:text-lg dark:text-gray-400">
               {'Technologies:'}
             </p>
@@ -90,14 +90,3 @@ const JobCard = ({
 };
 
 export default JobCard;
-
-export async function getStaticProps() {
-  const res = await fetch('https://jsonkeeper.com/b/3P8Y');
-  const data = await res.json();
-
-  return {
-    props: {
-      data,
-    },
-  };
-}

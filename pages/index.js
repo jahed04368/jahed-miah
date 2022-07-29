@@ -1,6 +1,3 @@
-import Head from 'next/head';
-import Image from 'next/image';
-import styles from '../styles/Home.module.css';
 import { AiOutlineGithub, AiFillLinkedin } from 'react-icons/ai';
 import { TbLetterT } from 'react-icons/tb';
 import { FcAbout } from 'react-icons/fc';
