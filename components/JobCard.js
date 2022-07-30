@@ -60,24 +60,22 @@ const JobCard = ({
               </button>
             )}
           </div>
-          {/* className={`${isExpanded ? 'line-clamp-none' : 'line-clamp-2'}`} */}
           <div>
             <p className="mt-2 text-base text-gray-200 sm:text-lg dark:text-gray-400">
               {'Technologies:'}
             </p>
+          </div>
 
-            <div className="p-2">
-              {techUsed.map((tech) => {
-                return (
-                  <span
-                    key={id}
-                    className="bg-blue-100 text-blue-800 text-base font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800"
-                  >
+          <div className="grid grid-cols-3 col-span-3 sm:grid-cols-4 sm:col-span-4 md:grid-cols-5 md:col-span-5 lg:grid-cols-7 lg:col-span-7 py-2">
+            {techUsed.map((tech) => {
+              return (
+                <div className="py-2" key={id}>
+                  <span className="bg-blue-100 text-blue-800 text-base font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800">
                     {tech}
                   </span>
-                );
-              })}
-            </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
