@@ -20,7 +20,7 @@ export default function Home({ data }) {
   return (
     <div className="bg-slate-700">
       <Navbar />
-      <div className="text-white container flex flex-wrap justify-between items-center mx-auto  px-2 py-10 lg:pt-20">
+      <div className="text-white container flex flex-wrap justify-between items-center mx-auto px-2 py-10 pt-28 ">
         <section className="">
           <div className="flex">
             <h2 className="text-3xl mt-2 text-yellow-400">
