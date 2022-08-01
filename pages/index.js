@@ -24,7 +24,7 @@ export default function Home({ data }) {
       <div className="text-white container flex flex-wrap justify-between items-center mx-auto px-2 py-10 pt-28">
         <div className="flex w-full md:w-11/12">
           <section className="w-full">
-            <div className="flex">
+            <div className="flex whitespace-nowrap">
               <h2 className="text-3xl mt-2 text-yellow-400">
                 {"Hello, I'm Jahed."}
               </h2>
@@ -40,7 +40,7 @@ export default function Home({ data }) {
               </span>
             </div>
           </section>
-          <div className="pt-3">
+          <div className="pt-3 md:pt-0">
             <NextImage
               src={JahedsPic}
               className="rounded-full"
