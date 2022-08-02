@@ -40,29 +40,30 @@ export default function Home({ data }) {
               </span>
             </div>
           </section>
-          <div className="pt-3 md:pt-0">
-            <NextImage
-              src={JahedsPic}
-              className="rounded-full"
-              width={120}
-              height={150}
-            />
-            <div className="flex justify-center">
-              <a
-                href="https://github.com/jahed04368"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <AiOutlineGithub size={30} className="hover:text-yellow-400" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/jahed-miah04368/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <AiFillLinkedin size={30} className="hover:text-yellow-400" />
-              </a>
-            </div>
+        </div>
+
+        <div className="pt-3 md:pt-0">
+          <NextImage
+            src={JahedsPic}
+            className="rounded-full"
+            width={120}
+            height={150}
+          />
+          <div className="flex justify-center">
+            <a
+              href="https://github.com/jahed04368"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <AiOutlineGithub size={30} className="hover:text-yellow-400" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/jahed-miah04368/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <AiFillLinkedin size={30} className="hover:text-yellow-400" />
+            </a>
           </div>
         </div>
       </div>
