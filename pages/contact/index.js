@@ -146,7 +146,7 @@ const Contact = () => {
           <div className="">
             <p className="text-2xl">
               {
-                'Thanks for contacting, I will have an reply for you in 3-5 working days'
+                'Thanks for contacting. I will aim to reply in 3 to 5 working days.'
               }
             </p>
             <Link href={'/'}>
