@@ -32,7 +32,7 @@ export default function Home({ data }) {
             </div>
             <div className="flex text-xl inline	w-10/12 md-w-full">
               <span>
-                {`Im a software `}
+                {`I'm a software `}
                 <span className="text-green-300 text-2xl">T</span>
                 <span>
                   {` Shaped developer at Ostmodern, and living in London, UK.`}

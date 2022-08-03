@@ -62,12 +62,11 @@ const Projects = () => {
       <div className="container flex flex-wrap justify-center items-center mx-auto px-2 py-10 lg:pt-20">
         <h1 className="text-3xl text-white pb-2">
           {
-            "Here are few projects I've worked on using NODE.JS, EXPRESS.JS. NEXT.js and REACT"
+            "Here are few projects I've worked on using node.js, express.js, next.js and react"
           }
         </h1>
 
         {newProjects.map((project) => {
-          console.log(project);
           {
             {
               return (
@@ -85,11 +84,9 @@ const Projects = () => {
       </div>
       <div className="container flex flex-wrap justify-center items-center mx-auto px-2 py-10 lg:pt-20">
         <h1 className="text-3xl text-white pb-2">
-          {"Here are few projects I've worked on using JS, CSS and HTML"}
+          {"Here are few projects I've worked on using js, css and html"}
         </h1>
-
         {oldProjects.map((project) => {
-          console.log(project);
           {
             {
               return (
