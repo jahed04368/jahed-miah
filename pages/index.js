@@ -120,7 +120,7 @@ export default function Home({ data }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch('https://jsonkeeper.com/b/4ED5');
+  const res = await fetch('https://jsonkeeper.com/b/ZZEQ');
   const data = await res.json();
 
   return {

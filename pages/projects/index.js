@@ -3,59 +3,7 @@ import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
 import ProjectCard from '../../components/ProjectCard';
 
-const projects = {
-  newProjects: [
-    {
-      id: '1',
-      desc: `This is a React.js app which records all the To Do's you have on your localStorage. You can also remove, search and hide all the To Do's you have.`,
-      projectName: 'To-Do App',
-      urllink: 'https://todo-jahed04368.netlify.app/',
-      img: 'images/to-do-app/todo-app.jpeg',
-    },
-    {
-      id: '2',
-      desc: `This is a React.js app which records all the To Do's you have on your localStorage. You can also remove, search and hide all the To Do's you have.`,
-      projectName: 'Hang Man Game',
-      urllink: 'https://hangman-jahed04368.netlify.app/',
-      img: 'images/hangman-game/hangman-game.jpeg',
-    },
-    {
-      id: '3',
-      desc: `This is a React.js app which records all the To Do's you have on your localStorage. You can also remove, search and hide all the To Do's you have.`,
-      projectName: 'Notes App',
-      urllink: 'https://notes-app-jahed04368.netlify.app/',
-      img: 'images/notes-app/notes-app.jpeg',
-    },
-  ],
-  oldProjects: [
-    {
-      id: '1',
-      desc: `This is a React.js app which records all the To Do's you have on your localStorage. You can also remove, search and hide all the To Do's you have.`,
-      projectName: 'Dice Game App',
-      urllink: 'https://jahed04368.github.io/dicee-game/',
-      img: 'images/dice-game/dice-game.jpeg',
-    },
-    {
-      id: '1',
-      desc: `This is a React.js app which records all the To Do's you have on your localStorage. You can also remove, search and hide all the To Do's you have.`,
-      projectName: 'Drum Kit App',
-      urllink: 'https://jahed04368.github.io/drum-kit/',
-      img: 'images/drum-kit/drum-kit.jpeg',
-    },
-    {
-      id: '1',
-      desc: `This is a React.js app which records all the To Do's you have on your localStorage. You can also remove, search and hide all the To Do's you have.`,
-      projectName: 'Simon Game',
-      urllink: 'https://jahed04368.github.io/simon-game/',
-      img: 'images/simon-game/simon-game.jpeg',
-    },
-  ],
-};
-
-const Projects = () => {
-  const { newProjects } = projects;
-  const { oldProjects } = projects;
-  console.log(newProjects);
+const Projects = ({ newProjects, oldProjects }) => {
   return (
     <div className="bg-slate-700">
       <Navbar />
@@ -108,3 +56,15 @@ const Projects = () => {
 };
 
 export default Projects;
+
+export async function getStaticProps() {
+  const res = await fetch('https://jsonkeeper.com/b/ZZEQ');
+  const { oldProjects, newProjects } = await res.json();
+
+  return {
+    props: {
+      newProjects,
+      oldProjects,
+    },
+  };
+}
