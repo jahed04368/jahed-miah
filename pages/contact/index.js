@@ -38,10 +38,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        'service_25i0rzz',
-        'template_5mpiocn',
+        process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE,
+        process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE,
         form.current,
-        'LdTpAW5_pWIRJPbRm'
+        process.env.NEXT_PUBLIC_EMAIL_JS_PUBLIC_KEY
       )
       .then(
         (result) => {

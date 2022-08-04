@@ -119,7 +119,7 @@ export default function Home({ about, employments }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch('https://jsonkeeper.com/b/ZZEQ');
+  const res = await fetch('https://jsonkeeper.com/b/PQAU');
   const { about, employments } = await res.json();
 
   return {
