@@ -26,7 +26,12 @@ const ProjectCard = ({ img, desc, projectName, urllink }) => {
               <p className="text-lg text-white pt-2 pr-2.5">{desc}</p>
             </div>
             <div className="row-span-1 md:col-span-1 py-3">
-              <NextImage src={`/${img}`} width={600} height={350} />
+              <NextImage
+                src={`/${img}`}
+                width={640}
+                height={360}
+                alt={projectName}
+              />
             </div>
           </div>
         </div>

@@ -53,6 +53,7 @@ export default function Home({ about, employments }) {
               href="https://github.com/jahed04368"
               target="_blank"
               rel="noreferrer"
+              aria-label="github"
             >
               <AiOutlineGithub size={30} className="hover:text-yellow-400" />
             </a>
@@ -60,6 +61,7 @@ export default function Home({ about, employments }) {
               href="https://www.linkedin.com/in/jahed-miah04368/"
               target="_blank"
               rel="noreferrer"
+              aria-label="linkedin"
             >
               <AiFillLinkedin size={30} className="hover:text-yellow-400" />
             </a>
