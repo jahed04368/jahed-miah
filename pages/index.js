@@ -1,5 +1,4 @@
 import { AiOutlineGithub, AiFillLinkedin } from 'react-icons/ai';
-import { TbLetterT } from 'react-icons/tb';
 import { FcAbout } from 'react-icons/fc';
 import { MdOutlineHistoryEdu } from 'react-icons/md';
 import Navbar from '../components/Navbar';
@@ -9,7 +8,7 @@ import React, { useState } from 'react';
 import NextImage from 'next/image';
 import JahedsPic from '../public/images/jahed-pic.png';
 
-export default function Home({ data }) {
+export default function Home({ about, employments }) {
   const [isExpanded, setExpand] = useState(false);
   const [isTrunicated, setTrunicated] = useState(false);
 
@@ -83,7 +82,7 @@ export default function Home({ data }) {
             }`}
             ref={setTrunicatedWrapper}
           >
-            {data.about}
+            {about}
           </p>
           {(isTrunicated || isExpanded) && (
             <button
@@ -100,7 +99,7 @@ export default function Home({ data }) {
             <MdOutlineHistoryEdu size={30} />
           </div>
         </div>
-        {data.employments.map((employment) => {
+        {employments.map((employment) => {
           return (
             <JobCard
               key={employment.id}
@@ -121,11 +120,12 @@ export default function Home({ data }) {
 
 export async function getStaticProps() {
   const res = await fetch('https://jsonkeeper.com/b/ZZEQ');
-  const data = await res.json();
+  const { about, employments } = await res.json();
 
   return {
     props: {
-      data,
+      about,
+      employments,
     },
   };
 }
