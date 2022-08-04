@@ -59,7 +59,7 @@ export default Projects;
 
 export async function getStaticProps() {
   const res = await fetch('https://jsonkeeper.com/b/ZZEQ');
-  const { oldProjects, newProjects } = await res.json();
+  const { newProjects, oldProjects } = await res.json();
 
   return {
     props: {

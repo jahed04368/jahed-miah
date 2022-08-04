@@ -94,7 +94,7 @@ const Contact = () => {
                   name="lastName"
                   ref={lastNameInputRef}
                 />
-                <p className="text-red-500 text-xs italic ">{errorLastName}</p>
+                <p className="text-red-500 text-xs italic">{errorLastName}</p>
               </div>
             </div>
             <div className="flex flex-wrap -mx-3 mb-6">
@@ -119,7 +119,7 @@ const Contact = () => {
                   Message
                 </label>
                 <textarea
-                  className=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
+                  className="no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
                   id="message"
                   name="message"
                   placeholder="your message here..."
@@ -151,7 +151,7 @@ const Contact = () => {
             </p>
             <Link href={'/'}>
               <button
-                className="mt-3  p-20 shadow bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded"
+                className="mt-3 p-20 shadow bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded"
                 type="button"
               >
                 {'Go Home'}
