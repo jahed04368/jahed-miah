@@ -9,9 +9,7 @@ const Projects = ({ newProjects, oldProjects }) => {
       <Navbar />
       <div className="container flex flex-wrap justify-center items-center mx-auto px-2 py-10 lg:pt-20">
         <h1 className="text-3xl text-white pb-2">
-          {
-            "Here are few projects I've worked on using node.js, express.js, next.js and react"
-          }
+          {'NODE.JS, EXPRESS.JS, NEXT.JS and REACT.JS'}
         </h1>
         {newProjects.map((project) => {
           {
@@ -30,9 +28,7 @@ const Projects = ({ newProjects, oldProjects }) => {
         })}
       </div>
       <div className="container flex flex-wrap justify-center items-center mx-auto px-2 py-10 lg:pt-20">
-        <h1 className="text-3xl text-white pb-2">
-          {"Here are few projects I've worked on using js, css and html"}
-        </h1>
+        <h1 className="text-3xl text-white pb-2">{'JS, CSS and HTML'}</h1>
         {oldProjects.map((project) => {
           {
             {
