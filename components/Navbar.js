@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <nav className="bg-slate-700 border-gray-200 px-2 sm:px-4 py-4 rounded dark:bg-gray-900 text-white border-b-2 border-white sticky top-0 z-50">
       <div className="container flex flex-wrap justify-between items-center mx-auto">
-        <Link href="/" className="flex items-center">
+        <Link href="/" className="flex items-center cursor-pointer">
           <span className="self-center text-3xl font-semibold whitespace-nowrap dark:text-white cursor-pointer">
             Jahed Miah
           </span>
