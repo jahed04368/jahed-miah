@@ -13,7 +13,6 @@ const Projects = ({ newProjects, oldProjects }) => {
             "Here are few projects I've worked on using node.js, express.js, next.js and react"
           }
         </h1>
-
         {newProjects.map((project) => {
           {
             {

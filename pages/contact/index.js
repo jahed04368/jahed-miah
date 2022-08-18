@@ -6,6 +6,7 @@ import Link from 'next/link';
 
 const Contact = () => {
   const form = useRef({});
+
   const [submitted, setSubmitted] = useState(false);
   const [errorfirstName, setErrorfirstName] = useState('');
   const [errorLastName, setErrorLastName] = useState('');
@@ -125,7 +126,6 @@ const Contact = () => {
                   placeholder="your message here..."
                   ref={messageInputRef}
                 />
-
                 <p className="text-red-500 text-xs italic">{errorMessage}</p>
               </div>
             </div>
