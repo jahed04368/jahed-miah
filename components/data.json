@@ -1,200 +1,234 @@
 {
-  "about": "ISEB certified, experienced web, mobile and api software testing professional with more than 6 years’ of experience in manual and automation testing. Proven achievement in bringing projects to completion ahead of schedule spread across diverse industries, ranging from Finance to Media. Exceptional communication skills as a teacher and mentor to junior engineering trainees.",
+  "about": "Mid-level Software Engineer with 6 years of experience delivering production-ready mobile and backend systems using React Native, JavaScript, and AWS. Brings an additional 5 years of senior-level automation experience, with deep expertise in CI/CD, performance testing, and reliability engineering. Strong end-to-end engineer with proven ability across frontend, backend, cloud infrastructure, and observability in fast-paced product environments.",
   "employments": [
     {
       "id": "employment-1",
-      "company": "Ostmodern",
-      "title": "Junior React Developer",
-      "date": "January 2020 to Present",
+      "company": "Currensea",
+      "title": "Software Engineer",
+      "date": "March 2024 to Present",
       "key_duties": [
-        "Creating and maintaining new API, Web UI and Appium frameworks for clients",
-        "Designing and writing test automation scripts for API, UI and Mobile",
-        "Interviewed, trained and mentored new QA’s",
-        "Running automation tests on CI/CD",
-        "Increasing in automation test coverage",
-        "Integration with other testing applications (AppliTools, BrowserStack and Slack)",
-        "Investigating problems in software as a result of testing",
-        "Investigating different tools for automation",
-        "Migrating Selenium tests to Cypress"
+        "Design, develop and maintain cross-platform mobile applications using React Native for iOS and Android",
+        "Build reusable UI components, manage complex state, and implement scalable frontend architecture",
+        "Develop backend functionality using AWS Lambda and API Gateway within a serverless environment",
+        "Integrate frontend applications with secure, well-documented REST APIs",
+        "Configure and maintain Datadog dashboards, logging and alerting for production monitoring",
+        "Participate in code reviews, technical discussions and architectural decisions",
+        "Work closely with product managers, designers and backend engineers throughout the delivery lifecycle"
       ],
       "tech": [
-        "Java",
-        "Applitools",
-        "Postman",
-        "Jenkins",
-        "Appium",
-        "Maven",
-        "Jira",
-        "Github",
-        "Android",
+        "React Native",
+        "JavaScript",
+        "TypeScript",
+        "AWS Lambda",
+        "API Gateway",
+        "S3",
+        "Datadog",
+        "Node.js",
+        "React",
         "iOS",
-        "BDD",
-        "Locust",
-        "Microservices",
-        "Cucumber",
-        "JUnit",
-        "API",
-        "Charles Proxy",
-        "Confluence",
-        "Rest Assured",
-        "Cypress"
+        "Android",
+        "REST API",
+        "Git",
+        "GitHub",
+        "Jira",
+        "Postman",
+        "Confluence"
       ]
     },
     {
       "id": "employment-2",
-      "company": "Connectt",
-      "title": "Software Developer In Test",
-      "date": "July 2019 to January 2020",
+      "company": "Currensea",
+      "title": "T-Shaped Developer",
+      "date": "November 2022 to March 2024",
       "key_duties": [
-        "Deputised for team leader in a busy test team of five QA engineering professionals",
-        "Created test automation frameworks from scratch",
-        "Wrote new Selenium UI tests and API automation tests",
-        "Updated Selenium UI tests and API automation tests",
-        "Devised new Selenium tests using Appium on iOS and Android",
-        "Load testing/ performance testing (Jmeter and Locust)",
-        "Integrated Appium with Device Farm",
-        "Ran Selenium API and UI tests on CI/CD",
-        "Increased in test coverage for automation",
-        "Interviewed, trained and mentored new QA’s."
+        "Worked across both software development and QA, supporting React features and automation frameworks",
+        "Contributed to mobile, web and backend development initiatives",
+        "Improved automation coverage and reliability using Selenium, WebdriverIO and Cypress",
+        "Acted as a bridge between developers and QA engineers during releases"
       ],
       "tech": [
-        "Java",
-        "Postman",
-        "Jenkins",
-        "Appium",
-        "Maven",
+        "React",
+        "JavaScript",
+        "Selenium",
+        "WebdriverIO",
+        "Cypress",
+        "Node.js",
+        "Jest",
+        "GitHub",
         "Jira",
-        "Github",
-        "Android",
-        "iOS",
-        "BDD",
-        "Locust",
-        "Microservices",
-        "Cucumber",
-        "JUnit",
-        "API",
-        "Charles Proxy",
-        "Visual Studio",
-        "Device Farm",
-        "Jmeter",
-        "Confluence",
-        "Rest Assured"
+        "Postman",
+        "CI/CD",
+        "Jenkins"
       ]
     },
     {
       "id": "employment-3",
-      "company": "Salary Finance",
-      "title": "Senior Test Analyst",
-      "date": "September 2017 to July 2019",
+      "company": "Ostmodern",
+      "title": "Software Developer in Test",
+      "date": "January 2020 to November 2022",
       "key_duties": [
-        "Deputising for team leader in busy test team of 4 QA engineering professionals",
-        "Creating automation API and UI framework",
-        "Assisted, mentored and hired new QA’s",
-        "Implemented and managed Quality Assurance process",
-        "Evaluated different tools for automation",
-        "Continuous Integration through Jenkins",
-        "Maintained regression suite",
-        "Produce accurate and informative reports for the business",
-        "Integration with HMRC and NS&I",
-        "Use appropriate measures and KPIs to validate and report on software quality"
+        "Designed and maintained automation frameworks for API, Web UI and Mobile applications",
+        "Led migration of Selenium-based test suites to Cypress",
+        "Integrated automation into CI/CD pipelines using Jenkins",
+        "Investigated flaky tests and production issues, performing root-cause analysis",
+        "Mentored junior QA engineers and supported technical interviews"
       ],
       "tech": [
+        "Cypress",
+        "Selenium",
         "Java",
-        "Postman",
+        "JavaScript",
+        "Appium",
+        "Rest Assured",
         "Jenkins",
-        "Maven",
+        "GitHub",
+        "Postman",
         "Jira",
-        "Github",
-        "Android",
         "BDD",
-        "Locust",
-        "Microservices",
         "Cucumber",
         "JUnit",
-        "API",
+        "iOS",
+        "Android",
         "Confluence",
-        "Rest Assured",
-        "SQL"
+        "Charles Proxy"
       ]
     },
     {
       "id": "employment-4",
-      "company": "Capita IT Professional Services",
-      "title": "Test Analyst",
-      "date": "January 2015 to September 2017",
+      "company": "Connectt",
+      "title": "Software Developer in Test",
+      "date": "July 2019 to January 2020",
       "key_duties": [
-        "Ensure all delivered features meet and adhere to original specification, customer and company requirements",
-        "Maintained regression suite",
-        "Review of supplier test scripts and evidence",
-        "Create and develop Test Plans",
-        "Create and execute SQL scripts used for test validation",
-        "Experience working on Front-End and Back-End of software development",
-        "Installing and configuring Java/Maven for all QAs to use BDD Framework",
-        "Work alongside other test and development team members on automation",
-        "Experience of working with globally distributed teams",
-        "API testing (manual and automation)"
+        "Built automation frameworks from scratch for UI, API and Mobile platforms",
+        "Developed Appium test suites for iOS and Android",
+        "Executed performance and load testing using JMeter and Locust",
+        "Maintained automated test execution as part of CI pipelines"
       ],
       "tech": [
         "Java",
-        "Postman",
+        "Selenium",
+        "Appium",
+        "Rest Assured",
+        "JMeter",
+        "Locust",
         "Jenkins",
         "Maven",
+        "GitHub",
+        "Postman",
         "Jira",
-        "Github",
+        "iOS",
+        "Android",
+        "BDD",
+        "Cucumber",
+        "Device Farm",
+        "Confluence"
+      ]
+    },
+    {
+      "id": "employment-5",
+      "company": "Salary Finance",
+      "title": "Senior Test Analyst",
+      "date": "September 2017 to July 2019",
+      "key_duties": [
+        "Owned QA processes across multiple financial services projects",
+        "Created API and UI automation frameworks and regression suites",
+        "Defined QA KPIs and reporting metrics for stakeholders",
+        "Mentored and onboarded new QA engineers",
+        "Worked on integrations with HMRC and NS&I"
+      ],
+      "tech": [
+        "Java",
+        "Selenium",
+        "Rest Assured",
+        "Jenkins",
+        "Maven",
+        "GitHub",
+        "Postman",
+        "Jira",
         "BDD",
         "Cucumber",
         "JUnit",
-        "API",
+        "SQL",
         "Confluence",
+        "Microservices"
+      ]
+    },
+    {
+      "id": "employment-6",
+      "company": "Capita IT Professional Services",
+      "title": "Quality Assurance Engineer",
+      "date": "January 2017 to September 2017",
+      "key_duties": [
+        "Performed frontend and backend testing across enterprise systems",
+        "Created SQL scripts for test validation and data verification",
+        "Automated API testing and maintained regression test suites",
+        "Collaborated with globally distributed teams"
+      ],
+      "tech": [
+        "Java",
+        "Selenium",
         "Rest Assured",
-        "SQL"
+        "SQL",
+        "Jenkins",
+        "Maven",
+        "Jira",
+        "BDD",
+        "Cucumber",
+        "JUnit",
+        "Postman",
+        "Confluence"
+      ]
+    },
+    {
+      "id": "employment-7",
+      "company": "Capita",
+      "title": "Quality Assurance Engineer",
+      "date": "June 2015 to December 2016",
+      "key_duties": [
+        "Reviewed requirements and supplier documentation",
+        "Created detailed test plans and executed regression testing",
+        "Used Quality Center for test execution and defect tracking"
+      ],
+      "tech": [
+        "Quality Center",
+        "SQL",
+        "Jira",
+        "Test Planning",
+        "Manual Testing",
+        "Regression Testing"
       ]
     }
   ],
-  "newProjects": [
-    {
-      "id": "newProject-1",
-      "desc": "This is a React.js app which records all the To Do's you have on your localStorage. You can also remove, search and hide all the To Do's you have.",
-      "projectName": "To-Do App",
-      "urllink": "https://todo-jahed04368.netlify.app/",
-      "img": "images/to-do-app/todo-app.jpeg"
-    },
-    {
-      "id": "newProject-2",
-      "desc": "This is a React.js app which records all the To Do's you have on your localStorage. You can also remove, search and hide all the To Do's you have.",
-      "projectName": "Hang Man Game",
-      "urllink": "https://hangman-jahed04368.netlify.app/",
-      "img": "images/hangman-game/hangman-game.jpeg"
-    },
-    {
-      "id": "newProject-3",
-      "desc": "This is a React.js app which records all the To Do's you have on your localStorage. You can also remove, search and hide all the To Do's you have.",
-      "projectName": "Notes App",
-      "urllink": "https://notes-app-jahed04368.netlify.app/",
-      "img": "images/notes-app/notes-app.jpeg"
+  "featuredProject": {
+    "id": "featured-1",
+    "projectName": "Saturday Football League Management System",
+    "desc": "A comprehensive React application for managing Saturday football league activities, featuring player statistics, match results, season-based organization, and real-time Firebase integration. Built with React 18, Vite, Firebase, and modern development practices.",
+    "urllink": "https://saturday-football-league.vercel.app/",
+    "githubLink": "https://github.com/jahed04368/saturday-football-league",
+    "tech": [
+      "React 18",
+      "Vite",
+      "Firebase Realtime Database",
+      "React Router DOM",
+      "EmailJS",
+      "CSS Modules",
+      "Vercel"
+    ],
+    "features": [
+      "Season-based data management with automatic detection",
+      "Player statistics tracking with automatic points calculation",
+      "Individual goal and assist tracking system",
+      "Admin panel for easy match entry",
+      "Firebase data synchronization",
+      "Email notification system",
+      "Responsive design for mobile and desktop",
+      "Clean sheets tracking for goalkeepers"
+    ],
+    "highlights": {
+      "players": "20+",
+      "matches": "100+",
+      "seasons": "3",
+      "uptime": "99.9%"
     }
-  ],
-  "oldProjects": [
-    {
-      "id": "oldProject-1",
-      "desc": "This is a React.js app which records all the To Do's you have on your localStorage. You can also remove, search and hide all the To Do's you have.",
-      "projectName": "Dice Game App",
-      "urllink": "https://jahed04368.github.io/dicee-game/",
-      "img": "images/dice-game/dice-game.jpeg"
-    },
-    {
-      "id": "oldProject-2",
-      "desc": "This is a React.js app which records all the To Do's you have on your localStorage. You can also remove, search and hide all the To Do's you have.",
-      "projectName": "Drum Kit App",
-      "urllink": "https://jahed04368.github.io/drum-kit/",
-      "img": "images/drum-kit/drum-kit.jpeg"
-    },
-    {
-      "id": "oldProject-3",
-      "desc": "This is a React.js app which records all the To Do's you have on your localStorage. You can also remove, search and hide all the To Do's you have.",
-      "projectName": "Simon Game",
-      "urllink": "https://jahed04368.github.io/simon-game/",
-      "img": "images/simon-game/simon-game.jpeg"
-    }
-  ]
+  }
 }
