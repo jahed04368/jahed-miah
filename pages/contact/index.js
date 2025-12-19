@@ -74,12 +74,10 @@ const Contact = () => {
 
       // Prepare template parameters
       const templateParams = {
-        from_name: `${enteredFirstName} ${enteredLastName}`,
-        from_email: enteredEmail,
-        message: enteredMessage,
         firstName: enteredFirstName,
         lastName: enteredLastName,
-        reply_to: enteredEmail
+        email: enteredEmail,
+        message: enteredMessage
       };
 
       const result = await emailjs.send(
