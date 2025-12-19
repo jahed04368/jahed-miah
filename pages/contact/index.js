@@ -74,6 +74,7 @@ const Contact = () => {
 
       // Prepare template parameters
       const templateParams = {
+        to_email: 'jahed04368@gmail.com',
         firstName: enteredFirstName,
         lastName: enteredLastName,
         email: enteredEmail,
