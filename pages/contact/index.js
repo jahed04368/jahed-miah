@@ -5,7 +5,7 @@ import emailjs from '@emailjs/browser';
 import Link from 'next/link';
 
 const Contact = () => {
-  const form = useRef({});
+  const form = useRef(null);
 
   const [submitted, setSubmitted] = useState(false);
   const [errorfirstName, setErrorfirstName] = useState('');
@@ -20,40 +20,87 @@ const Contact = () => {
 
   const handleOnSubmit = async (e) => {
     e.preventDefault();
-    const enteredFirstName = firstNameInputRef.current.value;
-    const enteredLastName = lastNameInputRef.current.value;
-    const enteredEmail = emailInputRef.current.value;
-    const enteredMessage = messageInputRef.current.value;
+    
+    // Clear previous errors
+    setErrorfirstName('');
+    setErrorLastName('');
+    setErrorEmail('');
+    setErrorMessage('');
 
-    if (!enteredFirstName)
-      return setErrorfirstName('Please fill out first name field.');
+    const enteredFirstName = firstNameInputRef.current.value.trim();
+    const enteredLastName = lastNameInputRef.current.value.trim();
+    const enteredEmail = emailInputRef.current.value.trim();
+    const enteredMessage = messageInputRef.current.value.trim();
 
-    if (!enteredLastName)
-      return setErrorLastName('Please fill out last name field.');
+    // Validation
+    let hasError = false;
 
-    if (!enteredEmail.includes('@'))
-      return setErrorEmail('email address is not valid.');
+    if (!enteredFirstName) {
+      setErrorfirstName('Please fill out first name field.');
+      hasError = true;
+    }
 
-    if (!enteredMessage)
-      return setErrorMessage('Please fill out message field.');
+    if (!enteredLastName) {
+      setErrorLastName('Please fill out last name field.');
+      hasError = true;
+    }
 
-    emailjs
-      .sendForm(
+    // Email validation regex
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!enteredEmail) {
+      setErrorEmail('Please fill out email field.');
+      hasError = true;
+    } else if (!emailRegex.test(enteredEmail)) {
+      setErrorEmail('Please enter a valid email address.');
+      hasError = true;
+    }
+
+    if (!enteredMessage) {
+      setErrorMessage('Please fill out message field.');
+      hasError = true;
+    } else if (enteredMessage.length < 10) {
+      setErrorMessage('Message must be at least 10 characters long.');
+      hasError = true;
+    }
+
+    if (hasError) return;
+
+    try {
+      console.log('Sending email with:', {
+        service: process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE,
+        template: process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE,
+        publicKey: process.env.NEXT_PUBLIC_EMAIL_JS_PUBLIC_KEY ? 'Set' : 'Not set'
+      });
+
+      // Prepare template parameters
+      const templateParams = {
+        from_name: `${enteredFirstName} ${enteredLastName}`,
+        from_email: enteredEmail,
+        to_email: 'jahed04368@gmail.com', // Your email where you want to receive messages
+        message: enteredMessage,
+        firstName: enteredFirstName,
+        lastName: enteredLastName,
+        email: enteredEmail
+      };
+
+      const result = await emailjs.send(
         process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE,
         process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE,
-        form.current,
+        templateParams,
         process.env.NEXT_PUBLIC_EMAIL_JS_PUBLIC_KEY
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
       );
-
-    return setSubmitted(true);
+      console.log('Email sent successfully:', result.text);
+      setSubmitted(true);
+      
+      // Clear form fields
+      firstNameInputRef.current.value = '';
+      lastNameInputRef.current.value = '';
+      emailInputRef.current.value = '';
+      messageInputRef.current.value = '';
+    } catch (error) {
+      console.error('Email send failed:', error);
+      setErrorMessage(`Failed to send message: ${error.text || error.message || 'Please try again later.'}`);
+    }
   };
 
   return (
@@ -136,8 +183,7 @@ const Contact = () => {
             <div className="md:flex md:items-center justify-center mt-8">
               <button
                 className="w-full md:w-auto px-8 py-3 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-bold rounded-lg hover:from-green-600 hover:to-emerald-700 transition-all duration-300 shadow-lg hover:shadow-green-500/50 transform hover:scale-105"
-                type="button"
-                onClick={handleOnSubmit}
+                type="submit"
               >
                 Send Message
               </button>
