@@ -76,11 +76,10 @@ const Contact = () => {
       const templateParams = {
         from_name: `${enteredFirstName} ${enteredLastName}`,
         from_email: enteredEmail,
-        to_email: 'jahed04368@gmail.com', // Your email where you want to receive messages
         message: enteredMessage,
         firstName: enteredFirstName,
         lastName: enteredLastName,
-        email: enteredEmail
+        reply_to: enteredEmail
       };
 
       const result = await emailjs.send(
